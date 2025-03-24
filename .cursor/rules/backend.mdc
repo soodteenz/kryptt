@@ -1,0 +1,47 @@
+---
+description: To determine what the tech stack is on the backend
+globs: 
+---
+---
+description: what is the backend of the app
+globs: 
+---
+# Backend Documentation
+
+## **1. Tech Stack**
+
+| Category                    | Choice                | Reasoning                                                                                       |
+| --------------------------- | --------------------- | ----------------------------------------------------------------------------------------------- |
+| **Backend Framework** | Python + FastAPI      | Async-ready, lightweight, and aligns with[Alpaca.py/LangChain](mdc:http:/alpaca.py/LangChain)tooling. |
+| **Database**          | PostgreSQL (Supabase) | Relational structure for trades/user data; integrates with Clerk auth.                          |
+
+---
+
+## **2. Third-Party Integrations**
+
+1. **Alpaca API** :
+
+* Paper trading endpoints for MVP.
+
+1. **Groq** :
+
+* LLM processes natural language into structured trade commands.
+
+1. **Paddle** :
+
+* Handle donation payments via webhooks
+
+---
+
+# 3. **Critical Flows**
+
+### **Trade Execution**
+
+1. User sends command (e.g., “Buy $100 BTC”) via frontend.
+2. Backend sends command to Groq for parsing.
+3. LangChain validates command structure (symbol, action, amount).
+4. Validated command → Alpaca API execution.
+
+## **4. Deployment**
+
+* **Hosting (both front and backend)** : Render

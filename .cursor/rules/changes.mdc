@@ -1,0 +1,14 @@
+---
+description: How to track changes done
+globs: 
+---
+---
+description: Used if there was a new feature implemented
+globs: 
+---
+
+# Sucessfull Implementation
+
+## Rules
+- At the end of your task in IMPLEMENTING A NEW FEATURE please ask me if it was successful or not
+- [changes.md](mdc:docs/SOP/changes.md) -> If successful in implementing a new feature, add it to the following file as step by step tutorial of what was done to achieve this. Include: Resources used, contextual information need, issues which arised and resolutions for the issues that were found

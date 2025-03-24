@@ -1,0 +1,142 @@
+---
+description: Describes the colours, font and aesthetic of the entire web application
+globs: 
+---
+---
+description: How to determine the colour of the app.
+globs: 
+---
+
+# Colours
+The colours of my web app should be:
+Black -> Main colours
+Yellow -> Accent / Highlights
+White -> Tertiary
+
+# Font In Depth Breakdown
+Using **Space Grotesk** as your web app's font is an excellent choice due to its modern, geometric, and futuristic appearance, which aligns well with Kryptt’s vision of democratizing global trading through intuitive automation [[4]]. Below is a detailed breakdown of how you can implement **Space Grotesk** across various elements of your website.
+
+---
+
+# **Space Grotesk Font Breakdown**
+
+## **1. Headings (H1, H2, H3)**
+
+### **H1**
+- **Size**: 40px
+- **Weight**: Bold (700)
+- **Styling**: Rounded corners and diagonal terminals give it a unique look. Use uppercase letters for impactful titles.
+- **Line Height**: 1.2em for compact yet readable spacing.
+- **Example Usage**: Main page headers like "Welcome to Kryptt" or "Start Trading Today."
+
+### **H2**
+- **Size**: 32px
+- **Weight**: SemiBold (600)
+- **Styling**: Title case for subheadings. Consider adding letter-spacing of 0.5px for better readability.
+- **Line Height**: 1.3em to ensure proper spacing between lines.
+- **Example Usage**: Section headers such as "Natural Language Trading" or "Portfolio Dashboard."
+
+### **H3**
+- **Size**: 28px
+- **Weight**: Medium (500)
+- **Styling**: Sentence case for tertiary headings. Add subtle underline effects for differentiation.
+- **Line Height**: 1.4em for comfortable reading.
+- **Example Usage**: Smaller section headers like "How It Works" or "Why Choose Us."
+
+---
+
+## **2. Body Text**
+
+### **Paragraphs (P)**
+- **Size**: 16px
+- **Weight**: Regular (400)
+- **Styling**: Standard paragraph text with optimal line length (50–75 characters per line). Use left alignment for easy scanning.
+- **Line Height**: 1.6em to enhance readability.
+- **Letter Spacing**: Normal (0px).
+- **Example Usage**: Descriptive content like "Kryptt makes global trading accessible to everyone, offering seamless integration with Alpaca’s infrastructure."
+
+### **Small Text (e.g., Captions, Footnotes)**
+- **Size**: 14px
+- **Weight**: Light (300)
+- **Styling**: Italics for captions or supplementary information. Keep the text concise and clear.
+- **Line Height**: 1.5em for legibility.
+- **Example Usage**: Image captions or disclaimers like "Data provided by Alpaca API."
+
+---
+
+## **3. Buttons and CTAs**
+
+### **Primary Buttons**
+- **Size**: 18px
+- **Weight**: Bold (700)
+- **Styling**: All caps for emphasis. Use padding of 12px vertically and 24px horizontally for a balanced look.
+- **Text Color**: White or light color on a contrasting background.
+- **Example Usage**: Call-to-action buttons like "Sign Up Now" or "Start Trading."
+
+### **Secondary Buttons**
+- **Size**: 16px
+- **Weight**: SemiBold (600)
+- **Styling**: Title case for secondary actions. Use a border style with transparent background for a clean design.
+- **Text Color**: Dark gray or primary brand color.
+- **Example Usage**: Secondary actions like "Learn More" or "Contact Support."
+
+---
+
+## **4. Navigation Menu**
+
+### **Menu Items**
+- **Size**: 18px
+- **Weight**: Medium (500)
+- **Styling**: Uppercase for menu items to maintain consistency and clarity. Add hover effects like slight color change or underline.
+- **Letter Spacing**: 1px for better separation.
+- **Example Usage**: Navigation links like "Home," "Features," "Pricing," and "About Us."
+
+---
+
+## **5. Forms and Input Fields**
+
+### **Labels**
+- **Size**: 14px
+- **Weight**: Regular (400)
+- **Styling**: Sentence case for form labels. Align labels above input fields for clarity.
+- **Example Usage**: Form labels like "Email Address" or "Password."
+
+### **Input Text**
+- **Size**: 16px
+- **Weight**: Regular (400)
+- **Styling**: Placeholder text in Light (300) weight. Ensure sufficient contrast against the background.
+- **Example Usage**: Input fields for user data entry.
+
+---
+
+## **6. Special Elements**
+
+### **Quotes and Highlights**
+- **Size**: 20px
+- **Weight**: Italicized Medium (500)
+- **Styling**: Use blockquotes with a larger font size and italic styling for emphasis. Add a vertical line on the left for visual distinction.
+- **Example Usage**: Highlighted testimonials or key messages like "Kryptt changed the way I trade globally."
+
+### **Error Messages**
+- **Size**: 14px
+- **Weight**: Bold (700)
+- **Styling**: Red text color for immediate attention. Keep the message concise and actionable.
+- **Example Usage**: Error notifications like "Invalid email address" or "Please fill out all required fields."
+
+---
+
+## **Implementation Tips**
+1. **Font Loading**: Use Google Fonts or similar services to load **Space Grotesk** efficiently. Include fallback fonts like Arial or Helvetica to ensure compatibility.
+   ```html
+   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   ```
+
+2. **Responsive Design**: Adjust font sizes dynamically using CSS media queries to cater to different screen sizes.
+   ```css
+   @media (max-width: 768px) {
+       h1 { font-size: 32px; }
+       p { font-size: 14px; }
+   }
+   ```
+
+3. **Accessibility**: Ensure sufficient contrast ratios between text and background colors to meet WCAG guidelines.

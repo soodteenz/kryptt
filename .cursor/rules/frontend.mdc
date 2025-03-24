@@ -1,0 +1,101 @@
+---
+description: What the frontend stack is
+globs: 
+---
+---
+description: What is the tech stack
+globs: 
+---
+# Frontend Documentation
+
+## **1. Tech Stack**
+
+| Category             | Choice          | Reasoning                                                        |
+| -------------------- | --------------- | ---------------------------------------------------------------- |
+| **Framework**  | Next.js (React) | SSR/SSG support, TypeScript integration, and file-based routing. |
+| **Styling**    | Tailwind CSS    | Utility-first styling with dark mode support.                    |
+| **UI Library** | Shadcn          | Customizable components (modified for Kryptt’s branding).       |
+| **Animation**  | Framer Motion   | Smooth transitions and interactions.                             |
+
+---
+
+## **2. UI Structure**
+
+### **Core Screens**
+
+### **Home** (`/`)
+
+* **Portfolio Overview** :
+* Filter by day/month/year/all-time.
+* Paper trading data via Alpaca API (real-time balance, P/L).
+* **News Feed** :
+* Embedded financial news.
+* **Top Positions** :
+* Display 3 largest holdings (asset, quantity, value).
+* **Recent Orders** :
+* Last 5 trades (symbol, action, status, timestamp).
+
+### **Chat** (`/chat`)
+
+* **LLM Interface** :
+* Chat with "Kryptt" (LLM avatar).
+* Message history with streaming responses.
+* Input field for trading commands (e.g., “Sell 50% of BTC”).
+
+### **Account** (`/account`)
+
+* **Positions** : List all open trades.
+* **Orders** : Pending/completed orders.
+* **Activities** : Deposit/withdrawal history.
+* **Balances** : Cash, crypto, and margin.
+* **Settings** : Risk tolerance, notification preferences.
+
+### **Legal** (`/legal`)
+
+* Embedded Alpaca agreements (terms, privacy policy).
+
+---
+
+## **3. Navigation**
+
+* **Sidebar Layout** :
+* Persistent left sidebar (collapsible on mobile).
+* Menu Items:
+  * Home → Portfolio/News
+  * Chat → LLM Trading Assistant
+  * Account → Positions/Orders
+  * Legal → Alpaca Docs
+
+---
+
+## **4. Styling**
+
+* **Theme** : Dark mode only.
+* **Colors** :
+* **Primary** : `#000000` (Black)
+* **Accent** : `#FFD700` (Yellow for buttons, borders, highlights)
+* **Tertiary** : `#FFFFFF` (White for text/icons)
+* **Animations** :
+* Page transitions: `framer-motion` slide effects.
+* Button hover: Scale-up with yellow glow.
+
+---
+
+## **5. Third-Party Integrations**
+
+1. **Alpaca API** :
+
+* Paper trading endpoints for MVP.
+* Real-time balance/order updates via WebSocket.
+
+1. **Paddle** :
+
+* Donation button in footer (yellow CTA).
+
+---
+
+## **6. Critical Tasks**
+
+1. Integrate Alpaca paper trading API for real transaction data.
+2. Build chat interface with LLM streaming (Groq).
+3. Implement sidebar navigation with Framer Motion interactions.

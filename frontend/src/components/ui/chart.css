@@ -1,0 +1,20 @@
+/* Chart indicator styles */
+.chart-indicator {
+  background-color: var(--color);
+  border-color: var(--color);
+}
+
+.chart-indicator[data-indicator-type="dashed"] {
+  background-color: transparent;
+  border-style: dashed;
+}
+
+/* Dynamic color handling */
+[data-indicator-color] {
+  --color: attr(data-indicator-color);
+}
+
+/* Generate styles for common colors */
+.chart-indicator-EAB308 {
+  --indicator-color: #EAB308;
+} 

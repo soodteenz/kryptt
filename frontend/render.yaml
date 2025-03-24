@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: kryptt
+    env: node
+    buildCommand: cd frontend && npm install && npm run build
+    startCommand: cd frontend && npm run start
+    publishDirectory: frontend/.next/standalone
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: NEXT_PUBLIC_BACKEND_URL
+        value: https://kryptt-api.onrender.com
+    autoDeploy: true 
